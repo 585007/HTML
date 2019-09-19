@@ -32,3 +32,29 @@ person.navn = "Tom";
 person["navn"] = "Svein Ove" // brukes når delene av objektet bestemmes under bruk slik at navn her kan endres til eksempel alder dersom det var tanken
 
 console.log(person)
+
+// Lister
+let liste = ["rød", "blå", "grønn"];
+console.log(liste);
+console.log(liste[1]);
+liste [2] = "gul";
+console.log(liste);
+liste [3] = "svart";
+console.log(liste);
+liste [4] = 2;
+console.log(liste);
+let liste2 = [1,2,3,4];
+console.log(liste2.length);
+console.log(liste.length);
+
+// function "metode i java"
+
+function greet(fornavn, etternavn) {
+    console.log("Hei " + fornavn + " " + etternavn)
+}
+greet("Svein Ove", "Surdal")
+
+function iAndre(nummer) {
+    return nummer*nummer;    
+}
+console.log(iAndre(8))
