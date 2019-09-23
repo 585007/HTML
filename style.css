@@ -1,7 +1,11 @@
 
 .pos {
     position: fixed;
+    right: 0;
     bottom: 0px;
     margin-right: auto;
     margin-left: auto;
+    width: 50px;
+    padding: 20px;
   }
+  
