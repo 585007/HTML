@@ -1,48 +1,7 @@
-body {
-    background-image: url("hex.jpg");
-    background-repeat: repeat;
-    color: black;
-    padding: 20px;
-    font-size: 20px}
-    a:link {
-    color: black;
-    text-decoration: none;}
-a:visited {
-    color: black;}
-a:hover {
-    color: blue;
-    text-decoration: underline;}
-a:active {
-    color: black;}
-td {
-    border: 1px solid black;
-    text-align: center;}
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 50px;
-    }
-.centerImage{
-    display: block;
-    margin-left: auto;
+
+.pos {
+    position: fixed;
+    bottom: 0px;
     margin-right: auto;
-    width: 50%;
-}
-.header {
-    width: 100%;
-    text-align: center;}
-.midd { 
-    text-align: center
-}
-.container {
-      position: relative;
-      text-align: center;
-      color: white;
-}
-.centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    font-size: 120px;
-}
+    margin-left: auto;
+  }
