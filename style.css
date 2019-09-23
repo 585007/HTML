@@ -1,0 +1,25 @@
+.header1{
+    position: fixed;
+    top: 0px;
+    font-size: 40px;
+    width: 90%;
+    padding: 0px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.table_header{
+    
+}
+
+a:visited {
+    color: black;}
+a:hover {
+    color: rgb(65, 0, 0);
+    text-decoration: none;}
+a:active {
+    color: black;}
+a:link {
+    text-decoration: none;
+}
