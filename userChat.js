@@ -24,7 +24,8 @@ function userChat() {
     if (uppercase == "HAPPY BIRTHDAY") { 
       sendSpecialChat = [true, "Thank you! How did you know it's my birthday?!"];
     }
-  
+    if (uppercase == "FUCK YOU") {sendSpecialChat = [true, "Fuck you too!"];}
+
     // sendSpecialChat is an array that will override the next thing the bot says with the second value if the first value is true. If the first value is false the bot will say the next thing in the script.
   
   
