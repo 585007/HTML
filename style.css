@@ -27,25 +27,11 @@ a:link {
     text-decoration: none;
 }
 
-
-
-
-
-
 .pos {
     position: fixed;
     right: 0;
     bottom: 0px;
-<<<<<<< HEAD
-    margin-right: auto;
-    margin-left: auto;
-
-  }
-
-    width: 50px;
-=======
     width: 120px;
->>>>>>> 5f98c5c39d0709b683e2035ca9a779001f279997
     padding: 20px;
     z-index: +1;
   }
@@ -55,14 +41,6 @@ a:link {
     margin-right: auto;
     width: 50%
   }
-<<<<<<< HEAD
-  
-
-.foot {
-    bottom: 0px;
-    background-color: grey;
-}
-=======
   .mid { 
     text-align: center
 }
@@ -113,4 +91,3 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 /*Slutt på galleri*/
->>>>>>> 5f98c5c39d0709b683e2035ca9a779001f279997
