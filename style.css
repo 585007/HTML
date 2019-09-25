@@ -27,6 +27,7 @@ a:link {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -35,6 +36,8 @@ a:link {
   width: 50%;
   padding: 50px;
   }
+=======
+>>>>>>> 5d95609ccbde5fe880da8c7d6bdda08410ac959f
 .pos {
     position: fixed;
     right: 0;
