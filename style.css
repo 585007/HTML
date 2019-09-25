@@ -36,17 +36,81 @@ a:link {
     position: fixed;
     right: 0;
     bottom: 0px;
+<<<<<<< HEAD
     margin-right: auto;
     margin-left: auto;
 
   }
 
     width: 50px;
+=======
+    width: 120px;
+>>>>>>> 5f98c5c39d0709b683e2035ca9a779001f279997
     padding: 20px;
+    z-index: +1;
   }
+  .imageGalleri{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%
+  }
+<<<<<<< HEAD
   
 
 .foot {
     bottom: 0px;
     background-color: grey;
 }
+=======
+  .mid { 
+    text-align: center
+}
+
+/*For galleriet*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*Slutt på galleri*/
+>>>>>>> 5f98c5c39d0709b683e2035ca9a779001f279997
