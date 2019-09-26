@@ -4,6 +4,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Roll IT</title>
     <link rel="shortcut icon" href="logo_white.png" />
+
+    <script>
+        know = {
+            "hei" : "Hei, hva trenger du hjelp med?",
+            "problemer" : "Høres komplisert ut.",
+            "ja" : "Good luck med det.",
+            "?" : "Husk å gi oss 5 stjerner :)"
+        };
+        function talk() {
+            var user = document.getElementById("userBox").value;
+            document.getElementById("userBox").value = "";
+            document.getElementById("chatLog").innerHTML += user+"<br>";
+            if (user in know) {
+                document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+            } else {
+                document.getElementById("chatLog").innerHTML += "Hva sa du?<br>";
+            }
+        } 
+    </script>
+
 </head>
 
   
@@ -32,5 +52,14 @@
 
     </div>
 
+    <div class = "pos2">
+        <div class="dropdown">
+        <span >Support</span>
+        <div class="dropdown-content">
+            <p id="chatLog">- - Support - -<br></p>
+            <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+        </div>
+      </div>
+    </div>
 </body>
 </html>
