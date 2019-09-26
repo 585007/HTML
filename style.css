@@ -28,7 +28,11 @@ a:link {
 }
 
 
-
+.logo {
+  width: 70%;
+  float: left;
+  padding: 5px;
+}
 
 .center {
   margin: auto;
