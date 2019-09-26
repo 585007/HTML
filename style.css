@@ -106,7 +106,8 @@ a:link {
     margin-right: auto;
     text-align: justify;
     text-justify: inter-word;
-    line-height: 1cm
+    line-height: 1cm;
+    width: 90%;
   }
   .galleriSize{
     padding: 100px;
