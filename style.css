@@ -28,6 +28,33 @@ a:link {
 }
 
 
+
+/* Personbildene om oss*/
+.persondiv {
+  border: 10px; 
+  margin: 100px;
+}
+.persontable {
+  width: 50%;
+}
+.person {
+  border: 0px;
+}
+.personskrift {
+  font-size: 30px;  
+}
+.personbilde {
+ width: 300px;
+}
+
+
+
+.beskrivelse {
+  padding: 50px; 
+  margin: 200px;
+}
+
+
 .logo {
   width: 70%;
   float: left;
