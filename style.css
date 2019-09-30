@@ -49,6 +49,7 @@ a:link {
   margin-right: auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: bold; 
+  border-spacing: 10px;
 }
 .person {
   border: 0px;
@@ -60,6 +61,11 @@ a:link {
 .personbilde {
  width: 300px;
 }
+
+.navnMargin {
+  font-size: 12px;
+}
+
 
 .OmOssHeader {
   margin-top: 200px;
