@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "nb">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Roll IT</title>
+    <link rel="shortcut icon" href="logo_white.png" />
+
+    <script>
+        know = {
+            "hei" : "Hei, hva trenger du hjelp med?",
+            "problemer" : "Høres komplisert ut.",
+            "ja" : "Good luck med det.",
+            "?" : "Husk å gi oss 5 stjerner :)"
+        };
+        function talk() {
+            var user = document.getElementById("userBox").value;
+            document.getElementById("userBox").value = "";
+            document.getElementById("chatLog").innerHTML += user+"<br>";
+            if (user in know) {
+                document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+            } else {
+                document.getElementById("chatLog").innerHTML += "Hva sa du?<br>";
+            }
+        } 
+    </script>
+
+</head>
+
+  
+<body>
+
+        <a href="chatbot.html">
+                <img src="box.png" alt="chat" class = "pos"/> </a>
+                
+            <div class = "header1">
+                <table>
+                    <tr>
+                        <td><img src="logo.png" alt = "Roll.IT" class = "logo"></td>
+                        <td class="tableHeader"><a href="index(ny).html">Hjem</a></td>
+                        <td class="tableHeader"><a href="">Kart</a></td>
+                        <td class="tableHeader"><a href="">Info</a></td>
+                        <td class="tableHeader"><a href="">Priser</a></td>
+                        <td class="tableHeader"><a href="prosjekt.html">Prosjekt</a></td>
+                        <td class="tableHeader"><a href="OmOss(ny).html">Om oss</a></td>
+                    </tr>
+                </table>
+            </div>
+        
+
+    <div class="foot">
+        <p>test</p>
+
+    </div>
+
+    <div class = "pos2">
+        <div class="dropdown">
+        <span >Support</span>
+        <div class="dropdown-content">
+            <p id="chatLog">- - Support - -<br></p>
+            <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
