@@ -16,3 +16,4 @@ Vi fikk dette:
 183		-webkit-animation-duration is an unknown vendor extension
 
 188		Unrecognized at-rule @-webkit-keyframes
+
