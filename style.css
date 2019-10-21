@@ -60,6 +60,7 @@ a:link {
 }
 .personbilde {
  width: 300px;
+ border-radius: 15px;
 }
 
 .navnMargin {
@@ -139,14 +140,14 @@ a:link {
     margin-right: auto;
     width: 100%
   }
-  .mid { 
+.mid { 
     text-align: center
 }
 
 
 
   .start{
-    padding: 200px;
+    padding-top: 200px;
   }
   .text{
     margin-left: auto;
@@ -154,29 +155,54 @@ a:link {
     text-align: justify;
     text-justify: inter-word;
     line-height: 1cm;
-    width: 90%;
+    width: 65%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   .galleriSize{
-    padding: 100px;
+    padding-top: 100px;
     margin-left: auto;
     margin-right: auto;
     width: 90%
   }
 
+
+.button {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  margin: 20px;
+  background-color: rgb(205, 254, 205);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-radius: 15px;
+  width: 160px;
+  text-align: center;
+}
+
+.button2 {
+  margin-bottom: 65px;
+}
+.topPad200{
+  padding-top: 200px;
+}
+
+
+
 /*For galleriet*/
+
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -191,7 +217,6 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -208,6 +233,7 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+
 /*Slutt på galleri*/
 
 
