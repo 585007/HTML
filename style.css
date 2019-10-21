@@ -139,7 +139,7 @@ a:link {
 
 
   .start{
-    padding: 200px;
+    padding-top: 200px;
   }
   .text{
     margin-left: auto;
@@ -147,7 +147,7 @@ a:link {
     text-align: justify;
     text-justify: inter-word;
     line-height: 1cm;
-    width: 90%;
+    width: 80%;
   }
   .galleriSize{
     padding: 100px;
