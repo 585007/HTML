@@ -241,11 +241,12 @@ img {vertical-align: middle;}
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
-  color: white;
+  background-color:rgb(133, 254, 133);
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
+  border-radius: 15px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -262,6 +263,7 @@ img {vertical-align: middle;}
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  border-radius: 15px;
 }
 
 /* Links inside the dropdown */
@@ -270,6 +272,7 @@ img {vertical-align: middle;}
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  border-radius: 15px;
 }
 
 /* Change color of dropdown links on hover */
