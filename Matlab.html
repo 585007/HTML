@@ -30,46 +30,123 @@
     <div class="text start">
         <h1>Kildekode:</h1>
         <p>
-        
+    function simple_gui2
+    <br>
+    n = 0;
+    <br>
+    f = figure('Position',[300,300,900,600]);<br>
+    h = [];<br>
+    
+    h(1) = uicontrol('Style','popupmenu','String',{'Peaks','Membrane','Sinc','Dalen','Spesiell'},'Position',[690,20,200,50],'Callback',@popup_menu_Callback);<br>
+    h(2) = axes('Units','pixels','Position',[50,40,510,510]);<br>
+    h(3) = uicontrol('Style','pushbutton','String','Rotate','Position',[690,80,200,50],'Callback',@rot_Callback);<br>
+    h(4) = uicontrol('Style','pushbutton','String','Top view','Position',[690,140,200,50],'Callback',@top_Callback);<br>
+    h(5) = uicontrol('Style','pushbutton','String','Left','Position',[690,200,100,50],'Callback',@left_Callback);<br>
+    h(6) = uicontrol('Style','pushbutton','String','Right','Position',[790,200,100,50],'Callback',@right_Callback);<br>
+    h(7) = uicontrol('Style','pushbutton','String','Start','Position',[690,260,100,50],'Callback',@start_Callback);<br>
+    h(8) = uicontrol('Style','pushbutton','String','Stopp','Position',[790,260,100,50],'Callback',@stopp_Callback);<br>
+    <br>
+    tmr = timer ('ExecutionMode','FixedRate','Period', 1.01, 'TimerFcn', {@rot_Callback});<br>
+    <br>
+    f.Units = 'normalized';<br>
+    set(h, 'Units', 'normalized');<br>
+    set(h, 'FontSize', 12);<br>
+    <br>
+    peaks_data = peaks(35);<br>
+    membrane_data = membrane;<br>
+    [x,y] = meshgrid(-15:.5:15);<br>
+    z = sqrt(x.^2+y.^2) + eps;<br>
+    sinc_data = sin(z)./z;<br>
+    rarFig_data = sin(z)./z + tan(z);<br>
+    t = 0:pi/10:2*pi;<br>
+    sylinder_data = cylinder(2+cos(t));<br>
+    <br>
+    [y, Fs] = audioread('engine.wav');<br>
+    <br>
+    player = audioplayer(y, Fs);<br>
+    <br>
+    current_data = peaks_data;<br>
+    s = surf(current_data);<br>
+    <br>
+    function popup_menu_Callback(source,eventdata)<br>
+        str = get(source, 'String');<br>
+        val = get(source,'Value');<br>
+        <br>
+        switch str{val};<br>
+            case 'Peaks' % User selects Peaks.<br>
+                current_data = peaks_data;<br>
+                x = [-2 42];<br>
+                y = [-2 42];<br>
+                z = [-10 20];<br>
+            case 'Membrane'
+                current_data = membrane_data;<br>
+                x = [-4 36];<br>
+                y = [-4 36];<br>
+                z = [-2 4];<br>
+            case 'Sinc'<br>
+                current_data = sinc_data;<br>
+                x = [-10 70];<br>
+                y = [-10 70];<br>
+                z = [-10 20];<br>
+            case 'Spesiell'<br>
+                current_data = rarFig_data;<br>
+                x = [-10 70];<br>
+                y = [-10 70];<br>
+                z = [-230 50];<br>
+            case 'Dalen'<br>
+                current_data = sylinder_data;<br>
+                x = [-1 25];<br>
+                y = [-1 25];<br>
+                z = [-10 20];<br>
+        end<br>
+        s = surf(current_data);<br>
+        xlim(x);<br>
+        ylim(y);<br>
+        zlim(z);<br>
+        <br>
+    end<br>
+    function rot_Callback(obj, ev)<br>
+        rotate(s, [0 0 1], 5);<br>
+        direction = [0 0 1];<br>
+        rotate(s, direction, n);<br>
+        n = n + 1;<br>
+    end<br>
+    function top_Callback(obj, ev)<br>
+        view(2);<br>
+    end<br>
+    function right_Callback(obj, ev)<br>
+        view(0,0);<br>
+        view(90,0);<br>
+    end<br>
+    function left_Callback(obj, ev)<br>
+        view(0,0);<br>
+        view(-90,0);<br>
+    end<br>
+    function start_Callback(obj, ev)<br>
+        play(player);<br>
+        <br>
+        start(tmr);<br>
+    end<br>
+    function stopp_Callback(obj, ev)<br>
+        pause(player);<br>
+        <br>
+        stop(tmr);<br>
+    end<br>
+    xlim([-2 42]);<br>
+    ylim([-2 42]);
+    zlim([-10 20]);<br>
+end<br>
         </p>
 
         <h1>Skjermbilder:</h1>
-    
-
-
-    <div class="galleriSize"> 
-		<div class="slideshow-container">
-
-			<div class="mySlides fade">
-				<img src="Pr3.png" alt="Pr3" class="imageGalleri">
-			</div>
-
-			<div class="mySlides fade">
-				<img src="Pr4.png" alt="Pr4" class="imageGalleri">
-			</div>
-
-			<div class="mySlides fade">
-				<img src="pr2.png" alt="Pr2" class="imageGalleri">
-			</div>
-            
-            <div class="mySlides fade">
-				<img src="Pr1.png" alt="Pr1" class="imageGalleri">
-            </div>
-            
-		</div>
-	</div>
-    <br>
-
-	<div class="mid">
-		<span class="dot"></span> 
-		<span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-	</div>
-
-    <script src="bildeGalleri.js"></script>
-</div>
-
-
+        <br>
+        <img src="MatLab1.png" alt="MatLab1"/>
+        <br>
+        <img src="MatLab2.png" alt="MatLab2"/>
+        <br>
+        <img src="MatLab3.png" alt="MatLab3"/>        
+        
+        <br><br>
+        <br><br>
 </body>
 </html>
