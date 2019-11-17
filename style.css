@@ -172,6 +172,11 @@ a:link {
   }
 
 
+.welcome {
+  font-size: 30px;
+  text-align: center;
+}
+
 .button {
   position: fixed;
   bottom: 0px;
